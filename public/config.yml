@@ -1,0 +1,64 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/imgs"
+public_folder: "/imgs"
+
+collections:
+  - name: "concerts"
+    label: "Concerts"
+    folder: "content/concerts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Type", name: "type", widget: "select", options: ["upcoming", "past"] }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "MMMM DD, YYYY", time_format: false }
+      - { label: "Venue", name: "venue", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Program", name: "program", widget: "text" }
+      - { label: "Time", name: "time", widget: "string", required: false, hint: "Only for upcoming concerts" }
+      - { label: "Ticket Link", name: "ticketLink", widget: "string", required: false, hint: "Full URL including https:// (e.g., https://ticketmaster.com/event/123)", pattern: ["^https?://.*", "Must be a valid URL starting with http:// or https://"] }
+
+  - name: "media"
+    label: "Media"
+    folder: "content/media"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Type", name: "type", widget: "select", options: ["recording", "video"] }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - { label: "Label", name: "label", widget: "string", required: false, hint: "For recordings only" }
+      - { label: "Venue", name: "venue", widget: "string", required: false, hint: "For videos only" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Link", name: "link", widget: "string", required: false, hint: "Full URL including https:// (e.g., https://spotify.com/album/123 or https://youtube.com/watch?v=abc)", pattern: ["^https?://.*", "Must be a valid URL starting with http:// or https://"] }
+
+  - name: "bio"
+    label: "Biography"
+    files:
+      - label: "English Biography"
+        name: "bio-en"
+        file: "content/bio/en.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "English Biography" }
+          - { label: "Language", name: "language", widget: "hidden", default: "en" }
+          - { label: "Content", name: "body", widget: "markdown" }
+      
+      - label: "French Biography"
+        name: "bio-fr"
+        file: "content/bio/fr.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Biographie Française" }
+          - { label: "Language", name: "language", widget: "hidden", default: "fr" }
+          - { label: "Content", name: "body", widget: "markdown" }
+      
+      - label: "Italian Biography"
+        name: "bio-it"
+        file: "content/bio/it.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Biografia Italiana" }
+          - { label: "Language", name: "language", widget: "hidden", default: "it" }
+          - { label: "Content", name: "body", widget: "markdown" }
