@@ -164,7 +164,7 @@ export default function ConcertsClient({ upcomingConcerts, pastConcerts }: Conce
           </div>
 
           <div className="hidden lg:block sticky top-24">
-            <div className="relative h-[700px] overflow-hidden" style={{ WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)', WebkitMaskComposite: 'destination-in', maskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)', maskComposite: 'intersect' }}>
+            <div className="relative h-[700px] overflow-hidden">
               <Image
                 src="/imgs/Concerts.jpg"
                 alt="Concert"
