@@ -69,7 +69,8 @@ export function getPastConcerts(): Concert[] {
 
 export function getMedia(): { recordings: Media[]; videos: Media[] } {
   const mediaDirectory = path.join(contentDirectory, 'media');
-  const fileNames = fs.readdirSync(mediaDirectory);
+  if (!fs.existsSync(mediaDirectory)) return { recordings: [], videos: [] };
+  const fileNames = fs.readdirSync(mediaDirectory).filter(f => !f.startsWith('.'));
   
   const allMedia = fileNames.map((fileName) => {
     const fullPath = path.join(mediaDirectory, fileName);
