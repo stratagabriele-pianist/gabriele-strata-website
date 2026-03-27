@@ -16,10 +16,9 @@ collections:
     fields:
       - { label: "Type", name: "type", widget: "select", options: ["upcoming", "past"] }
       - { label: "Date", name: "date", widget: "datetime", date_format: "MMMM DD, YYYY", time_format: false }
-      - { label: "Venue", name: "venue", widget: "string" }
       - { label: "Location", name: "location", widget: "string" }
-      - { label: "Program", name: "program", widget: "text" }
-      - { label: "Time", name: "time", widget: "string", required: false, hint: "Only for upcoming concerts" }
+      - { label: "Venue", name: "venue", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Ticket Link", name: "ticketLink", widget: "string", required: false, hint: "Full URL including https:// (e.g., https://ticketmaster.com/event/123)", pattern: ["^https?://.*", "Must be a valid URL starting with http:// or https://"] }
 
   - name: "media"
@@ -28,13 +27,11 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Type", name: "type", widget: "select", options: ["recording", "video"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Year", name: "year", widget: "string" }
-      - { label: "Label", name: "label", widget: "string", required: false, hint: "For recordings only" }
-      - { label: "Venue", name: "venue", widget: "string", required: false, hint: "For videos only" }
+      - { label: "Venue", name: "venue", widget: "string", required: false }
       - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Link", name: "link", widget: "string", required: false, hint: "Full URL including https:// (e.g., https://spotify.com/album/123 or https://youtube.com/watch?v=abc)", pattern: ["^https?://.*", "Must be a valid URL starting with http:// or https://"] }
+      - { label: "YouTube Link", name: "link", widget: "string", required: false, hint: "Full YouTube URL (e.g., https://www.youtube.com/watch?v=abc123)", pattern: ["^https?://.*", "Must be a valid URL starting with http:// or https://"] }
 
   - name: "bio"
     label: "Biography"

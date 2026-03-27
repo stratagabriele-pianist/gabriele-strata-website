@@ -17,7 +17,7 @@ const config: Config = {
         "accent-dim": "var(--accent-dim)",
         "accent-container": "var(--accent-container)",
         surface: "#12141a",
-        "surface-container-low": "#191c24",
+        "surface-container-low": "#161820",
         "surface-container": "#1f222d",
         "surface-container-high": "#262a36",
         "surface-container-highest": "#2d313f",
@@ -29,7 +29,7 @@ const config: Config = {
         "outline-variant": "var(--outline-variant)",
       },
       fontFamily: {
-        display: ["Epilogue", "sans-serif"],
+        display: ["Manrope", "sans-serif"],
         body: ["Manrope", "sans-serif"],
       },
       fontSize: {

@@ -1,8 +1,8 @@
-import { getMedia } from '@/lib/content';
+import { getVideos } from '@/lib/content';
 import MediaClient from './MediaClient';
 
 export default function Media() {
-  const { recordings, videos } = getMedia();
+  const videos = getVideos();
 
-  return <MediaClient recordings={recordings} videos={videos} />;
+  return <MediaClient videos={videos} />;
 }

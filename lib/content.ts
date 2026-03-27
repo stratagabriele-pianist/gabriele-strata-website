@@ -7,10 +7,9 @@ const contentDirectory = path.join(process.cwd(), 'content');
 export interface Concert {
   type: 'upcoming' | 'past';
   date: string;
-  venue: string;
   location: string;
-  program: string;
-  time?: string;
+  venue?: string;
+  description?: string;
   ticketLink?: string;
 }
 
@@ -42,27 +41,30 @@ export function getConcerts(): Concert[] {
     return {
       type: data.type,
       date: data.date,
-      venue: data.venue,
       location: data.location,
-      program: data.program,
-      time: data.time,
+      venue: data.venue,
+      description: data.description,
       ticketLink: data.ticketLink,
     } as Concert;
   });
 
-  concerts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  concerts.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
   
   return concerts;
 }
 
 export function getUpcomingConcerts(): Concert[] {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
   const concerts = getConcerts();
-  return concerts.filter(concert => concert.type === 'upcoming');
+  return concerts.filter(concert => new Date(concert.date) >= today);
 }
 
 export function getPastConcerts(): Concert[] {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
   const concerts = getConcerts();
-  return concerts.filter(concert => concert.type === 'past');
+  return concerts.filter(concert => new Date(concert.date) < today).reverse();
 }
 
 export function getMedia(): { recordings: Media[]; videos: Media[] } {
@@ -89,6 +91,11 @@ export function getMedia(): { recordings: Media[]; videos: Media[] } {
   const videos = allMedia.filter(item => item.type === 'video');
   
   return { recordings, videos };
+}
+
+export function getVideos(): Media[] {
+  const { videos } = getMedia();
+  return videos;
 }
 
 export function getBio(language: 'en' | 'fr' | 'it'): Bio {

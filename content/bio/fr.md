@@ -3,10 +3,33 @@ title: Biographie Française
 language: fr
 ---
 
-Gabriele Strata s'est imposé comme l'un des pianistes les plus remarquables de sa génération, captivant les publics par sa profonde musicalité et sa brillance technique. Ses performances se caractérisent par une sensibilité exceptionnelle à la couleur et à la texture, combinée à une compréhension profonde du contexte historique et émotionnel de chaque œuvre.
+Reconnu pour la clarté et la profondeur de son jeu, Gabriele Strata s’impose par une approche
+profondément réfléchie et personnelle du répertoire pianistique.
+Cette maîtrise lui vaut une reconnaissance internationale à Varsovie en 2025 à l’occasion du
+Concours International Frédéric Chopin, et le magazine Gramophone salue la force de sa
+personnalité artistique ainsi que la clarté de son discours musical. Peu après, sa carrière prend
+une dimension nouvelle lorsqu’il remplace Maria João Pires au pied levé dans le Concerto pour
+piano n°27 de Mozart, sous la baguette de Kent Nagano.
 
-Né dans une famille au riche patrimoine musical, Gabriele a commencé ses études de piano dès son plus jeune âge. Son affinité naturelle pour l'instrument était évidente dès le début, et il a rapidement progressé au cours de ses années de formation sous la direction de pédagogues distingués.
+Lauréat de plusieurs concours internationaux, il se distingue notamment au Concours Musical
+International de Montréal 2024, où il remporte la Médaille d’argent, le Prix du public et le Prix
+de musique de chambre, après avoir obtenu le 1er prix et prix du public au Concours International
+de Rio de Janeiro un an plus tôt.
+Gabriele Strata est nommé artiste en résidence pour trois ans par les Amici della Musica di
+Firenze en 2025, et rejoint ainsi l’une des institutions musicales les plus renommées d’Italie, où
+il se produit régulièrement en récital et en musique de chambre au Teatro della Pergola.
+Déjà actif sur la scène internationale, il est invité régulièrement en Europe, en Amérique et en
+Asie, collaborant avec des chefs d’orchestre tels que Xian Zhang, Emmanuel Tjeknavorian,
+Umberto Benedetti Michelangeli et Roberto Tibiriçá, et se produisant dans des salles parmi les
+plus prestigieuses dont la Berliner Philharmonie, le Wigmore Hall et le Barbican Centre de
+Londres, le Concertgebouw d’Amsterdam, le Teatro la Fenice de Venise, la Maison symphonique
+de Montréal ou encore le Minato Mirai Hall de Yokohama.
 
-Son répertoire s'étend des maîtres baroques aux compositeurs contemporains, avec une reconnaissance particulière pour ses interprétations d'œuvres romantiques et du début du XXe siècle. Gabriele s'est produit dans des salles prestigieuses à travers l'Europe et au-delà, recevant les éloges des critiques et du public pour son intégrité artistique et sa présence scénique captivante.
-
-Au-delà de la scène de concert, Gabriele est profondément engagé dans l'éducation musicale et dirige régulièrement des masterclasses et des ateliers. Il croit au pouvoir transformateur de la musique et s'efforce d'inspirer la prochaine génération de musiciens par son enseignement et ses performances.
+Son répertoire s’étend de la musique baroque à la création contemporaine, révélant un artiste à la
+fois rigoureux, curieux et profondément engagé dans la transmission du discours musical.
+Formé par Boris Berman, Benedetto Lupo et Julia Mustonen-Dahlkvist, il obtient un Master of
+Music à l’Université de Yale à 19 ans, avant de poursuivre son perfectionnement à la Guildhall
+School of Music & Drama de Londres, à l’Accademia Nazionale di Santa Cecilia de Rome et au
+Conservatoire National Supérieur de Musique et de Danse de Paris.
+Gabriele Strata est décoré de la Médaille du Président de la République italienne, en
+reconnaissance de ses accomplissements artistiques exceptionnels.

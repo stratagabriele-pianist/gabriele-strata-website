@@ -12,7 +12,7 @@ export default function CurvedDivider({
   flip = false,
 }: CurvedDividerProps) {
   return (
-    <div className={`relative w-full ${flip ? 'rotate-180' : ''}`} style={{ height: '80px' }}>
+    <div className={`relative w-full ${flip ? 'rotate-180' : ''}`} style={{ height: '70px' }}>
       <svg
         viewBox="0 0 1440 100"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ export default function CurvedDivider({
           fill={topColor}
         />
         <path
-          d="M0,50 Q360,90 720,50 T1440,50 L1440,100 L0,100 Z"
+          d="M0,0 C550,100 1200,100 1440,100 L0,100 Z"
           fill={bottomColor}
         />
       </svg>

@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" data-theme="teal" suppressHydrationWarning>
       <head>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </head>
