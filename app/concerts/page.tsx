@@ -1,9 +1,8 @@
-import { getUpcomingConcerts, getPastConcerts } from '@/lib/content';
+import { getConcerts } from '@/lib/content';
 import ConcertsClient from './ConcertsClient';
 
 export default function Concerts() {
-  const upcomingConcerts = getUpcomingConcerts();
-  const pastConcerts = getPastConcerts();
+  const concerts = getConcerts();
 
-  return <ConcertsClient upcomingConcerts={upcomingConcerts} pastConcerts={pastConcerts} />;
+  return <ConcertsClient concerts={concerts} />;
 }

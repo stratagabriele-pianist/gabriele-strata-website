@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navigation />
           {children}
+          <Footer />
         </ThemeProvider>
         <Script
           src="https://identity.netlify.com/v1/netlify-identity-widget.js"

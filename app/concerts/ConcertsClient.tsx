@@ -7,11 +7,15 @@ import SectionWrapper from '@/components/SectionWrapper';
 import { Concert } from '@/lib/content';
 
 interface ConcertsProps {
-  upcomingConcerts: Concert[];
-  pastConcerts: Concert[];
+  concerts: Concert[];
 }
 
-export default function ConcertsClient({ upcomingConcerts, pastConcerts }: ConcertsProps) {
+export default function ConcertsClient({ concerts }: ConcertsProps) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  const upcomingConcerts = concerts.filter(concert => new Date(concert.date) >= today);
+  const pastConcerts = concerts.filter(concert => new Date(concert.date) < today).reverse();
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });

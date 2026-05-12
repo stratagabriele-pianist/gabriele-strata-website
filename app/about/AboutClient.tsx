@@ -51,6 +51,13 @@ export default function AboutClient({ bioEn }: AboutProps) {
 
       <CurvedDivider topColor="#12141a" bottomColor="#161820" />
 
+      <QuoteBanner
+        quote="A talent of extraordinary sensitivity and perfect technique"
+        source="Il Sole 24 Ore"
+        bgColor="bg-surface-container-low"
+        noTopBorder
+      />
+
       <SectionWrapper bgColor="bg-surface-container-low" className="py-spacing-24">
         <div className="grid md:grid-cols-12 gap-spacing-12 items-center">
           <motion.div
@@ -60,7 +67,7 @@ export default function AboutClient({ bioEn }: AboutProps) {
             viewport={{ once: true }}
             className="md:col-span-7"
           >
-            <h2 className="font-display text-display-sm text-primary mb-6">
+            <h2 className="font-display text-display-sm text-primary mb-6" style={{ color: '#5fc4d4' }}>
               Biography
             </h2>
             <div className="space-y-6 font-body text-body-lg text-on-surface-variant leading-relaxed">
@@ -88,6 +95,12 @@ export default function AboutClient({ bioEn }: AboutProps) {
         </div>
       </SectionWrapper>
 
+      <QuoteBanner
+        quote="A recital of perfected creativity, pinning his name onto posterity"
+        source="Crepuscular Musings"
+        bgColor="bg-surface"
+      />
+
       <SectionWrapper bgColor="bg-surface" className="py-spacing-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -107,15 +120,6 @@ export default function AboutClient({ bioEn }: AboutProps) {
           </button>
         </motion.div>
       </SectionWrapper>
-
-    <QuoteBanner
-        quote="A recital of perfected creativity, pinning his name onto posterity"
-        source="Crepuscular Musings"
-        quote2="A talent of extraordinary sensitivity and perfect technique"
-        source2="Il Sole 24 Ore"
-        bgColor="bg-surface-container-low"
-        noTopBorder
-      />
     </main>
   );
 }
