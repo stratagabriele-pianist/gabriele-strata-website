@@ -51,7 +51,7 @@ export default function MediaClient({ videos }: MediaProps) {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-4">
+            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-4" style={{ color: '#5fc4d4' }}>
               Performances
             </p>
             <h1 className="font-display text-[2.5rem] md:text-[4.5rem] lg:text-[6rem] leading-[1.0] text-on-surface mb-6">
@@ -77,9 +77,13 @@ export default function MediaClient({ videos }: MediaProps) {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-display text-display-md text-primary mb-spacing-8">
+          <h2 className="font-display text-display-md text-primary mb-spacing-8 text-center" style={{ color: '#5fc4d4' }}>
             Video Performances
           </h2>
+
+          <p className="font-body font-extralight text-headline-md md:text-headline-lg text-on-surface leading-snug mb-4 text-center">
+            This section is currently being updated. Please come back later!
+          </p>
 
           <div className="grid md:grid-cols-2 gap-spacing-6">
             {videos.map((video, index) => {
@@ -110,7 +114,7 @@ export default function MediaClient({ videos }: MediaProps) {
                     )}
                   </div>
                   <div className="p-6">
-                    <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-2">
+                    <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-accent mb-2">
                       {[video.venue, video.year].filter(Boolean).join(' • ')}
                     </p>
                     <h3 className="font-display text-headline-md text-on-surface">

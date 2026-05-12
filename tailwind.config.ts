@@ -16,6 +16,8 @@ const config: Config = {
         accent: "var(--accent)",
         "accent-dim": "var(--accent-dim)",
         "accent-container": "var(--accent-container)",
+        "nav-primary": "var(--nav-primary)",
+        "nav-primary-dim": "var(--nav-primary-dim)",
         surface: "#12141a",
         "surface-container-low": "#161820",
         "surface-container": "#1f222d",

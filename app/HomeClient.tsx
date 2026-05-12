@@ -44,7 +44,7 @@ export default function HomeClient({ upcomingConcerts }: HomeProps) {
               Classical Pianist
             </p>
             <h1 className="font-display text-[2.75rem] md:text-[5rem] lg:text-[7rem] leading-[1.0] text-on-surface mb-8">
-              Gabriele <span className="text-primary">Strata</span>
+              Gabriele <span className="text-nav-primary" style={{ color: '#5fc4d4' }}>Strata</span>
             </h1>
           </motion.div>
         </div>
@@ -161,7 +161,7 @@ export default function HomeClient({ upcomingConcerts }: HomeProps) {
                       href={concert.ticketLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-8 py-3 bg-primary text-on-primary rounded-round-four font-body text-title-lg font-medium transition-all duration-300 hover:bg-primary-dim hover:shadow-[0_0_20px_rgba(155,123,155,0.4)]"
+                      className="inline-block px-8 py-3 bg-primary text-on-primary rounded-round-four font-body text-title-lg font-medium transition-all duration-300 hover:bg-primary-dim hover:shadow-[0_0_20px_rgba(123,27,56,0.4)]"
                     >
                       Get Tickets
                     </a>

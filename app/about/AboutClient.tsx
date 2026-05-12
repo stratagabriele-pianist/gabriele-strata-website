@@ -39,7 +39,7 @@ export default function AboutClient({ bioEn }: AboutProps) {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-accent mb-4">
+            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-4" style={{ color: '#5fc4d4' }}>
               Biography
             </p>
             <h1 className="font-display text-[2.5rem] md:text-[4.5rem] lg:text-[6rem] leading-[1.0] text-on-surface mb-6">
@@ -50,15 +50,6 @@ export default function AboutClient({ bioEn }: AboutProps) {
       </section>
 
       <CurvedDivider topColor="#12141a" bottomColor="#161820" />
-
-      <QuoteBanner
-        quote="A recital of perfected creativity, pinning his name onto posterity"
-        source="Crepuscular Musings"
-        quote2="A talent of extraordinary sensitivity and perfect technique"
-        source2="Il Sole 24 Ore"
-        bgColor="bg-surface-container-low"
-        noTopBorder
-      />
 
       <SectionWrapper bgColor="bg-surface-container-low" className="py-spacing-24">
         <div className="grid md:grid-cols-12 gap-spacing-12 items-center">
@@ -117,6 +108,14 @@ export default function AboutClient({ bioEn }: AboutProps) {
         </motion.div>
       </SectionWrapper>
 
+    <QuoteBanner
+        quote="A recital of perfected creativity, pinning his name onto posterity"
+        source="Crepuscular Musings"
+        quote2="A talent of extraordinary sensitivity and perfect technique"
+        source2="Il Sole 24 Ore"
+        bgColor="bg-surface-container-low"
+        noTopBorder
+      />
     </main>
   );
 }

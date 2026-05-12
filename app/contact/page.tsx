@@ -57,7 +57,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-4">
+            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-4" style={{ color: '#5fc4d4' }}>
               Get in Touch
             </p>
             <h1 className="font-display text-[2.5rem] md:text-[4.5rem] lg:text-[6rem] leading-[1.0] text-on-surface mb-6">
@@ -79,13 +79,13 @@ export default function Contact() {
             className="space-y-spacing-8"
           >
             <div>
-              <h2 className="font-display text-display-md text-primary mb-spacing-6 text-center">
+              <h2 className="font-display text-display-md text-primary mb-spacing-6 text-center" style={{ color: '#5fc4d4' }}>
                 Contact Information
               </h2>
 
               <div className="text-center">
-                <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-accent mb-3">
-                  Management
+                <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-accent mb-3" style={{ color: '#5fc4d4' }}>
+                  General Management
                 </p>
                 <p className="font-display text-headline-lg text-on-surface mb-1">
                   Toret Artist Management
@@ -95,7 +95,7 @@ export default function Contact() {
                 </p>
                 <a
                   href="mailto:l.panrello@toretartistmanagement.com"
-                  className="font-body text-body-lg text-primary hover:text-primary-dim transition-colors"
+                  className="font-body text-body-lg text-primary hover:text-primary-dim transition-colors" style={{ color: '#5fc4d4' }}
                 >
                   l.panrello@toretartistmanagement.com
                 </a>
@@ -139,7 +139,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-display text-display-md text-primary mb-spacing-6 text-center">
+            <h2 className="font-display text-display-md text-primary mb-spacing-6 text-center" style={{ color: '#5fc4d4' }}>
               Send a Message
             </h2>
 
@@ -215,7 +215,7 @@ export default function Contact() {
               </div>
 
               {status === 'success' && (
-                <p className="font-body text-body-md text-primary text-center">
+                <p className="font-body text-body-md text-primary text-center" style={{ color: '#5fc4d4' }}>
                   Message sent — thank you!
                 </p>
               )}
@@ -228,7 +228,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="w-full px-8 py-4 bg-primary text-on-primary rounded-round-four font-body text-body-lg font-medium transition-all duration-300 hover:scale-[1.02] hover:bg-primary-dim hover:shadow-[0_0_30px_rgba(155,123,155,0.4)] ambient-shadow disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                className="w-full px-8 py-4 bg-primary text-on-primary rounded-round-four font-body text-body-lg font-medium transition-all duration-300 hover:scale-[1.02] hover:bg-primary-dim hover:shadow-[0_0_30px_rgba(123,27,56,0.4)] ambient-shadow disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 {status === 'sending' ? 'Sending…' : 'Send Message'}
               </button>

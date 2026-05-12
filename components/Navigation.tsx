@@ -44,7 +44,7 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Link href="/" className="font-display text-headline-md text-primary tracking-tight hover:text-primary-dim transition-colors">
+              <Link href="/" className="font-display text-headline-md text-nav-primary tracking-tight hover:text-nav-primary-dim transition-colors" style={{ color: '#5fc4d4' }}>
                 Gabriele Strata
               </Link>
             </div>
@@ -54,9 +54,10 @@ export default function Navigation() {
                 <li key={item.path}>
                   <Link
                     href={item.path}
-                    className={`font-body text-body-md tracking-wide transition-all duration-300 hover:text-primary ${
-                      pathname === item.path ? 'text-primary' : 'text-on-surface-variant'
+                    className={`font-body text-body-md tracking-wide transition-all duration-300 hover:text-nav-primary ${
+                      pathname === item.path ? 'text-nav-primary' : 'text-on-surface-variant'
                     }`}
+                    style={{ color: pathname === item.path ? '#5fc4d4' : 'inherit' }}
                   >
                     {item.name}
                   </Link>
@@ -65,7 +66,8 @@ export default function Navigation() {
             </ul>
 
             <button 
-              className="md:hidden text-on-surface-variant hover:text-primary transition-colors"
+              className="md:hidden text-on-surface-variant hover:text-nav-primary transition-colors"
+              style={{ color: '#5fc4d4' }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -125,9 +127,10 @@ export default function Navigation() {
                       <Link
                         href={item.path}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`block font-display text-headline-md tracking-tight transition-all duration-300 hover:text-primary hover:translate-x-2 ${
-                          pathname === item.path ? 'text-primary' : 'text-on-surface'
+                        className={`block font-display text-headline-md tracking-tight transition-all duration-300 hover:text-nav-primary hover:translate-x-2 ${
+                          pathname === item.path ? 'text-nav-primary' : 'text-on-surface'
                         }`}
+                        style={{ color: pathname === item.path ? '#5fc4d4' : 'inherit' }}
                       >
                         {item.name}
                       </Link>

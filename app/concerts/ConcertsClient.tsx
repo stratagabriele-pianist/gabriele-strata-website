@@ -38,7 +38,7 @@ export default function ConcertsClient({ upcomingConcerts, pastConcerts }: Conce
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-4">
+            <p className="font-body text-label-sm uppercase tracking-[0.1rem] text-primary mb-4" style={{ color: '#5fc4d4' }}>
               Performances
             </p>
             <h1 className="font-display text-[2.5rem] md:text-[4.5rem] lg:text-[6rem] leading-[1.0] text-on-surface mb-6">
@@ -54,7 +54,7 @@ export default function ConcertsClient({ upcomingConcerts, pastConcerts }: Conce
         <div className="grid lg:grid-cols-2 gap-spacing-12 items-start">
 
           <div>
-            <h2 className="font-display text-display-sm md:text-display-md text-primary mb-spacing-8">
+            <h2 className="font-display text-display-sm md:text-display-md text-primary mb-spacing-8" style={{ color: '#5fc4d4' }}>
               Upcoming Concerts
             </h2>
 
@@ -94,7 +94,7 @@ export default function ConcertsClient({ upcomingConcerts, pastConcerts }: Conce
                         href={concert.ticketLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-8 py-3 bg-primary text-on-primary rounded-round-four font-body text-title-lg font-medium transition-all duration-300 hover:bg-primary-dim hover:shadow-[0_0_20px_rgba(155,123,155,0.4)]"
+                        className="inline-block px-8 py-3 bg-primary text-on-primary rounded-round-four font-body text-title-lg font-medium transition-all duration-300 hover:bg-primary-dim hover:shadow-[0_0_20px_rgba(123,27,56,0.4)]"
                       >
                         Get Tickets
                       </a>
@@ -108,7 +108,7 @@ export default function ConcertsClient({ upcomingConcerts, pastConcerts }: Conce
               ))}
             </div>
 
-            <h2 className="font-display text-display-sm md:text-display-md text-primary mt-spacing-12 mb-spacing-8">
+            <h2 className="font-display text-display-sm md:text-display-md text-primary mt-spacing-12 mb-spacing-8" style={{ color: '#5fc4d4' }}>
               Past Performances
             </h2>
 
@@ -148,7 +148,7 @@ export default function ConcertsClient({ upcomingConcerts, pastConcerts }: Conce
                         href={concert.ticketLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-8 py-3 bg-primary text-on-primary rounded-round-four font-body text-title-lg font-medium transition-all duration-300 hover:bg-primary-dim hover:shadow-[0_0_20px_rgba(155,123,155,0.4)]"
+                        className="inline-block px-8 py-3 bg-primary text-on-primary rounded-round-four font-body text-title-lg font-medium transition-all duration-300 hover:bg-primary-dim hover:shadow-[0_0_20px_rgba(123,27,56,0.4)]"
                       >
                         Get Tickets
                       </a>
